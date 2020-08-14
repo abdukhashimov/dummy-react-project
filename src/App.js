@@ -6,10 +6,12 @@ import CakeContainer from "./components/CakeContainer";
 import HooksContainer from "./components/HooksContainer";
 import IceCreamContainer from "./components/IceCreamContainer";
 import NewCakeContainer from "./components/NewCakeContainer";
+import UserContainer from "./components/UserContainer";
 
 function App() {
   return (
     <Provider store={store}>
+    <UserContainer/>
       <div>
         <NewCakeContainer />
       </div>
