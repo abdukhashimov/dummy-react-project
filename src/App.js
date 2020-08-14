@@ -5,10 +5,14 @@ import store from "./redux/store";
 import CakeContainer from "./components/CakeContainer";
 import HooksContainer from "./components/HooksContainer";
 import IceCreamContainer from "./components/IceCreamContainer";
+import NewCakeContainer from "./components/NewCakeContainer";
 
 function App() {
   return (
     <Provider store={store}>
+      <div>
+        <NewCakeContainer />
+      </div>
       <div>
         <IceCreamContainer />
       </div>
